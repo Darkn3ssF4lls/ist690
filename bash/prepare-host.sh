@@ -1,12 +1,8 @@
 #!/bin/bash
 
-#prepare fedora to manage vm's with virt
+#Prepare Fedora30 to be a qemu-kvm host:
+#Download the packages as outlined in Mastering KVM Virtualization.
 dnf install qemu-kvm libvirt virt-install virt-manager virt-install libguestfs-tools-c -y
+
+#Start the libvirtd process which manages the qemu-kvm instance.
 systemctl enable libvirtd && systemctl start libvirtd
-
-#prepare fedora to manage vm's with OZ
-dnf install -y oz libguestfs-tools
-
-#Prepare fedora for ansible
-dnf install ansible 
-
