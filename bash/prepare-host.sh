@@ -8,4 +8,4 @@ dnf install qemu-kvm libvirt virt-install virt-manager virt-install libguestfs-t
 systemctl enable libvirtd && systemctl start libvirtd
 
 #Add current user to the virtualization manger groups
-sudo adduser -aG $USER libvirt
+sudo usermod -g $USER libvirt
