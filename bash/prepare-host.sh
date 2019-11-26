@@ -6,3 +6,6 @@ dnf install qemu-kvm libvirt virt-install virt-manager virt-install libguestfs-t
 
 #Start the libvirtd process which manages the qemu-kvm instance.
 systemctl enable libvirtd && systemctl start libvirtd
+
+#Add current user to the virtualization manger groups
+sudo adduser $USER libvirt
