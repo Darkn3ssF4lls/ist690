@@ -1,1 +1,2 @@
-# This project is for IST 651
+# ist658
+Final Project for the IST 658 Course. 
