@@ -22,7 +22,7 @@ sudo virsh autostart --disable $input &&
 sudo virsh list --all &&
 
 #
-sleep 30
+sleep 10
 
 #
 sudo virt-sysprep -d $input  &&
