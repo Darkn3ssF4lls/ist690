@@ -19,19 +19,16 @@ sudo virsh shutdown --domain $input &&
 sudo virsh autostart --disable $input &&
 
 #
-sudo virsh list --all &&
+sleep 10
 
 #
-sleep 10
+sudo virsh list --all &&
 
 #
 sudo virt-sysprep -d $input  &&
 
 #
 sudo virsh dumpxml --domain $input >> $input,'.xml' &&
-
-#
-sudo virsh undefine --domain $input &&
 
 #
 sudo virsh list --all 
