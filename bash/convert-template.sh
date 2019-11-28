@@ -22,7 +22,7 @@ sudo virsh autostart --disable $input &&
 sudo virsh list --all &&
 
 #
-sudo virt-sysprep -d $input --verbose &&
+sudo virt-sysprep -d $input  &&
 
 #
 sudo virsh dumpxml --domain $input >> $input,'.xml' &&
