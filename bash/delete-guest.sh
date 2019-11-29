@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#This whole file needs to be updated with the correct process to completely delete the vm from the host system. 
 #erase the virtual machines to reset for example
 virsh list --all
 read -p 'Please enter only vm name: ' input
