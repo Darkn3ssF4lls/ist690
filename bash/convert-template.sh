@@ -28,7 +28,7 @@ sudo virsh list --all &&
 sudo virt-sysprep -d $input  &&
 
 #
-sudo virsh dumpxml --domain $input >> $input,'.xml' &&
+sudo virsh dumpxml --domain $input >> $input'.xml' &&
 
 #
 sudo virsh list --all 
