@@ -24,7 +24,7 @@ sleep 5 &&
 #Applies the standard of template to the vm.
 sudo virsh domrename $input 'template-'$input &&
 
-input=$'index-'$input
+input=$'template-'$input
 
 #Due to errors being thrown this causes the script to pause for 5 seconds to let the above commands be performed.
 sleep 5 &&
@@ -36,7 +36,7 @@ sudo virsh list --all &&
 sudo virt-sysprep -d $input  &&
 
 #Creates a xml backup of the file in the xml project folder. Possible use in creating clones.
-sudo virsh dumpxml --domain $input >> '../../xml/'$input'.xml' &&
+sudo virsh dumpxml --domain $input >> './xml/'$input'.xml' &&
 
 #Confirms all action has been completed.
 sudo virsh list --all 
