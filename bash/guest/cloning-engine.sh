@@ -11,6 +11,6 @@
 
 #while [$instance -le $clones] 
 #do 
-sudo virt-clone --original template-centos7 --name clone-centos --file /var/lib/libvirt/images/clone-centos.qcow2 --auto-clone
+sudo virt-clone --original template1-centos7 --name clone-centos --file /var/lib/libvirt/images/clone-centos.qcow2 --auto-clone
 #let instance++
 #done
