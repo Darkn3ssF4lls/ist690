@@ -12,5 +12,10 @@ instance=1 &&
 while [ $instance -le $clones ] 
 do 
 sudo virt-clone --original $template --name $clonename$instance --file '/var/lib/libvirt/images/'$clonename$instance'.qcow2' --auto-clone
+sleep 5
+sudo virsh start $clonename$instance
+sudo virsh autostart $clonename$instance
 let instance++
 done
+
+sudo virsh list --all
