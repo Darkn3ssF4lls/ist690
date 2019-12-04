@@ -18,6 +18,9 @@ sudo virsh shutdown --domain $input &&
 #Turns off any autostart that feature may be enabled.
 sudo virsh autostart --disable $input 
 
+#Due to errors being thrown this causes the script to pause for 5 seconds to let the above commands be performed.
+sleep 5 &&
+
 #Applies the standard of template to the vm.
 sudo virsh domrename $input 'template-'$input &&
 

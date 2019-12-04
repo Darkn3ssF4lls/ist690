@@ -12,4 +12,4 @@ sudo usermod -g $USER libvirt
 groups
 
 #Download CentOS version 7 and place it in the default pool location for qemu-kvm
-wget -O /var/lib/libvirt/images/CentOS-7-x86_64-Everything-1908.iso "http://mirrors.rit.edu/centos/7.7.1908/isos/x86_64/CentOS-7-x86_64-Everything-1908.iso"
+sudo wget -O /var/lib/libvirt/images/CentOS-7-x86_64-Everything-1908.iso "http://mirrors.rit.edu/centos/7.7.1908/isos/x86_64/CentOS-7-x86_64-Everything-1908.iso"
