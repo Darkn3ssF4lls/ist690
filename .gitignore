@@ -1,4 +1,0 @@
-#This file is a git file. It allows the programing of ignored file types, directories, or specific files from being uploaded to git.
-#The following line tells git to ignore the directory of installers. This was used early on in the project to hold the iso files from Fedora, CentOS, and Ubuntu distributions of linux. 
-#I may add the xml folder to this list before submission depending on passwords etc being present.
-installers/
