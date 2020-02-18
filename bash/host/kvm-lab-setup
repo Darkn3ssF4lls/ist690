@@ -1,0 +1,8 @@
+#!/bin/bash
+sudo dnf install qemu-kvm libvirt virt-install virt-manager virt-install libguestfs-tools-c virt-viewer -y &&
+sudo systemctl enable libvirtd && systemctl start libvirtd &&
+sudo useradd virt-admin &&
+sudo passwd virt-admin &&
+sudo usermod -g libvirt virt-admin &&
+groups virt-admin
+sudo wget -O /var/lib/libvirt/images/CentOS-7-x86_64-Everything-1908.iso "http://mirrors.rit.edu/centos/7.7.1908/isos/x86_64/CentOS-7-x86_64-Everything-1908.iso"
