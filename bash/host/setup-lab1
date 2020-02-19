@@ -1,6 +1,12 @@
 #!/bin/bash
-sudo dnf install qemu-kvm libvirt virt-install virt-manager virt-install libguestfs-tools-c virt-viewer -y &&
+sudo yum install qemu-kvm libvirt virt-install virt-manager virt-install libguestfs-tools-c virt-viewer -y &&
 sudo systemctl enable libvirtd && systemctl start libvirtd &&
 sudo usermod -a -G libvirt $USER  &&
 groups
-sudo wget -O /var/lib/libvirt/images/raspi.zip "https://downloads.raspberrypi.org/raspbian_lite_latest"
+sudo wget -O /var/lib/libvirt/images/raspbian.zip "https://downloads.raspberrypi.org/raspbian_lite_latest"
+sudo /var/lib/libvirt/images
+sudo unzip raspbian.zip 
+sudo ls -la
+echo 'Type the title of the file exactly' title
+mv ./$title ./raspbian.img
+
