@@ -3,4 +3,4 @@ sudo dnf install qemu-kvm libvirt virt-install virt-manager virt-install libgues
 sudo systemctl enable libvirtd && systemctl start libvirtd &&
 sudo usermod -a -G libvirt $USER  &&
 groups
-sudo wget -O /var/lib/libvirt/images/CentOS-7-x86_64-Everything-1908.iso "http://mirrors.rit.edu/centos/7.7.1908/isos/x86_64/CentOS-7-x86_64-Everything-1908.iso"
+sudo wget -O /var/lib/libvirt/images/raspi.zip "https://downloads.raspberrypi.org/raspbian_lite_latest"
