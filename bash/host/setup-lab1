@@ -1,12 +1,23 @@
 #!/bin/bash
-sudo yum install qemu-kvm libvirt virt-install virt-manager virt-install libguestfs-tools-c virt-viewer -y &&
+sudo yum install yum install qemu-kvm qemu-img virt-manager libvirt libvirt-python libvirt-client virt-install virt-viewer bridge-utils &&
 sudo systemctl enable libvirtd && systemctl start libvirtd &&
 sudo usermod -a -G libvirt $USER  &&
 groups
-sudo wget -O /var/lib/libvirt/images/raspbian.zip "https://downloads.raspberrypi.org/raspbian_lite_latest"
-sudo /var/lib/libvirt/images
-sudo unzip raspbian.zip 
-sudo ls -la
-echo 'Type the title of the file exactly' title
-mv ./$title ./raspbian.img
+sudo wget -O /var/lib/libvirt/images/raspbian.iso "https://downloads.raspberrypi.org/rpd_x86_latest"
 
+#This code is to try and install a lighteight Raspbian VM#
+##At this Time it was not working and so it is commented##
+#sudo wget -O /var/lib/libvirt/images/raspbian.iso "https://downloads.raspberrypi.org/rpd_x86_latest"
+#sudo wget -O /var/lib/libvirt/images/raspbian.zip "https://downloads.raspberrypi.org/raspbian_lite_latest"
+#sudo /var/lib/libvirt/images
+#sudo unzip raspbian.zip 
+#sudo ls -la
+#echo 'Type the title of the file exactly' title
+#mv ./$title ./raspbian.img
+
+#Link to ISO File Info Page
+#https://www.raspberrypi.org/downloads/raspberry-pi-desktop/
+#Link to Emulate Rasberry Pi Page
+#https://gist.github.com/stefanozanella/4608873
+#Link to Rasberry Pi v3 B+ Page
+#https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/
