@@ -1,1 +1,1 @@
-This is not the readme you are looking for. 
+Files for Capstone IST 754 as Independant study 690. Consisting of 3 reports and generation of two labs. Goal deploying AirStack or other Openstack Topologies for use in the Center for Emerging Network Technologies at Syracuse University. 
