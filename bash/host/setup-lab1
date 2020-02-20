@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo yum install qemu-kvm qemu-img virt-manager libvirt libvirt-python libvirt-client virt-install virt-viewer bridge-utils &&
+sudo yum groupinstall "Virtualization" "Virtualization Platform" "Virtualization Tools" &&
 sudo systemctl enable libvirtd && systemctl start libvirtd &&
 sudo usermod -a -G libvirt $USER  &&
 groups
