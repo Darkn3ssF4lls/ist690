@@ -1,18 +1,18 @@
 #!/bin/bash
-sudo yum install yum install qemu-kvm qemu-img virt-manager libvirt libvirt-python libvirt-client virt-install virt-viewer bridge-utils &&
+sudo yum install qemu-kvm qemu-img virt-manager libvirt libvirt-python libvirt-client virt-install virt-viewer bridge-utils &&
 sudo systemctl enable libvirtd && systemctl start libvirtd &&
 sudo usermod -a -G libvirt $USER  &&
 groups
-sudo wget -O /var/lib/libvirt/images/raspbian.iso "https://downloads.raspberrypi.org/rpd_x86_latest"
+sudo wget -O /var/lib/libvirt/images/centos8.iso 'http://mirror.vtti.vt.edu/centos/8.1.1911/isos/x86_64/CentOS-8.1.1911-x86_64-dvd1.iso'
 
 #This code is to download a copy of CentOS7 to be used as a guest#
 #It is currently disabled due to trying to use raspbian as guest##
-#sudo wget -O /var/lib/libvirt/images/CentOS-7-x86_64-Everything-1908.iso "http://mirrors.rit.edu/centos/7.7.1908/isos/x86_64/CentOS-7-x86_64-Everything-1908.iso"
+#sudo wget -O /var/lib/libvirt/images/CentOS-7-x86_64-Everything-1908.iso 'http://mirrors.rit.edu/centos/7.7.1908/isos/x86_64/CentOS-7-x86_64-Everything-1908.iso'
 
 #This code is to try and install a lighteight Raspbian VM#
 ##At this Time it was not working and so it is commented##
-#sudo wget -O /var/lib/libvirt/images/raspbian.iso "https://downloads.raspberrypi.org/rpd_x86_latest"
-#sudo wget -O /var/lib/libvirt/images/raspbian.zip "https://downloads.raspberrypi.org/raspbian_lite_latest"
+#sudo wget -O /var/lib/libvirt/images/raspbian.iso 'https://downloads.raspberrypi.org/rpd_x86_latest'
+#sudo wget -O /var/lib/libvirt/images/raspbian.zip 'https://downloads.raspberrypi.org/raspbian_lite_latest'
 #sudo /var/lib/libvirt/images
 #sudo unzip raspbian.zip 
 #sudo ls -la
