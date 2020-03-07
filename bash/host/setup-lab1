@@ -1,9 +1,14 @@
 #!/bin/bash
 sudo yum groupinstall "Virtualization" "Virtualization Platform" "Virtualization Tools" &&
+sudo yum install system-config-kickstart
 sudo systemctl enable libvirtd && systemctl start libvirtd &&
 sudo usermod -a -G libvirt $USER  &&
 groups
 sudo wget -O /var/lib/libvirt/images/centos8.iso 'http://mirror.vtti.vt.edu/centos/8.1.1911/isos/x86_64/CentOS-8.1.1911-x86_64-dvd1.iso'
+
+#This code is to download a copy of CentOS8 to be used as a Guest
+#This is here for record keeping
+#sudo wget -O /var/lib/libvirt/images/centos8.iso 'http://mirror.vtti.vt.edu/centos/8.1.1911/isos/x86_64/CentOS-8.1.1911-x86_64-dvd1.iso'
 
 #This code is to download a copy of CentOS7 to be used as a guest#
 #It is currently disabled due to trying to use raspbian as guest##
