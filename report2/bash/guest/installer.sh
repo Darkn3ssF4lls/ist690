@@ -7,7 +7,7 @@ sudo virt-install --connect qemu:///system \
 --vcpus 1 \
 --disk pool=default,size=10,format=qcow2 \
 --graphics=spice \
---location /var/lib/libvirt/images/centos7 .iso \
+--location /var/lib/libvirt/images/centos7.iso \
 --autostart 
 
 
