@@ -24,6 +24,9 @@ sudo wget -O /var/lib/libvirt/images/centos7.iso 'http://mirrors.rit.edu/centos/
 #echo 'Type the title of the file exactly' title
 #mv ./$title ./raspbian.img
 
+#This code creates a fedora 31 iso in the image directory. 
+#sudo wget -O /var/lib/libvirt/images/fedora31.iso 'https://download.fedoraproject.org/pub/fedora/linux/releases/31/Server/x86_64/iso/Fedora-Server-dvd-x86_64-31-1.9.iso'
+
 #Link to ISO File Info Page
 #https://www.raspberrypi.org/downloads/raspberry-pi-desktop/
 #Link to Emulate Rasberry Pi Page
