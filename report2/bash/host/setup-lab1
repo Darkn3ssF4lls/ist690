@@ -5,7 +5,7 @@ sudo systemctl enable libvirtd && systemctl start libvirtd &&
 sudo usermod -a -G libvirt $USER  &&
 groups
 sudo wget -O /var/lib/libvirt/images/centos7.iso 'http://mirrors.rit.edu/centos/7.7.1908/isos/x86_64/CentOS-7-x86_64-Everything-1908.iso'
-sudo wget -O /var/lib/libvirt/images/fedora31.iso 'https://download.fedoraproject.org/pub/fedora/linux/releases/31/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-31-1.9.iso'
+sudo wget -O /var/lib/libvirt/images/fedora31-server.iso 'https://download.fedoraproject.org/pub/fedora/linux/releases/31/Server/x86_64/iso/Fedora-Server-dvd-x86_64-31-1.9.iso'
 
 #This code is to download a copy of CentOS8 to be used as a Guest
 #This is here for record keeping
@@ -26,10 +26,10 @@ sudo wget -O /var/lib/libvirt/images/fedora31.iso 'https://download.fedoraprojec
 #mv ./$title ./raspbian.img
 
 #This code creates a fedora 31 server iso in the image directory. 
-#sudo wget -O /var/lib/libvirt/images/fedora31.iso 'https://download.fedoraproject.org/pub/fedora/linux/releases/31/Server/x86_64/iso/Fedora-Server-dvd-x86_64-31-1.9.iso'
+#sudo wget -O /var/lib/libvirt/images/fedora31-server.iso 'https://download.fedoraproject.org/pub/fedora/linux/releases/31/Server/x86_64/iso/Fedora-Server-dvd-x86_64-31-1.9.iso'
 
 #This code creates a fedora 31 workstation iso in the image directory.
-#sudo wget -O /var/lib/libvirt/images/fedora31.iso 'https://download.fedoraproject.org/pub/fedora/linux/releases/31/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-31-1.9.iso'
+#sudo wget -O /var/lib/libvirt/images/fedora31-work.iso 'https://download.fedoraproject.org/pub/fedora/linux/releases/31/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-31-1.9.iso'
 
 #Link to ISO File Info Page
 #https://www.raspberrypi.org/downloads/raspberry-pi-desktop/

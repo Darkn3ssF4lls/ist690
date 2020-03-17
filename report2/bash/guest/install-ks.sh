@@ -1,6 +1,6 @@
 #! /bin/bash
 
-./cent-ks.sh & ./fedora-ks.sh
+./cent-ks.sh & ./fedora-server-ks.sh 
 
 
 

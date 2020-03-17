@@ -9,3 +9,11 @@ https://www.techotopia.com/index.php/Installing_a_KVM_Guest_OS_from_the_Command-
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html-single/virtualization_host_configuration_and_guest_installation_guide/index
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_deployment_and_administration_guide/sect-guest_virtual_machine_installation_overview-creating_guests_with_virt_install#sect-Guest_virtual_machine_installation_overview-virt_install-network_installation
 
+
+
+https://www.server-world.info/en/note?os=Fedora_31&p=desktop&f=1
+https://www.server-world.info/en/note?os=Fedora_31&p=desktop&f=1
+https://serverfault.com/questions/319254/what-in-a-kickstart-file-sets-the-desktop-gui-as-default-runlevel-5
+
+https://docs.fedoraproject.org/en-US/Fedora/html/Installation_Guide/sect-kickstart-postinstall.html
+https://docs.fedoraproject.org/en-US/Fedora/html/Installation_Guide/sect-kickstart-packages.html
