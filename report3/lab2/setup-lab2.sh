@@ -1,19 +1,17 @@
 #!/bin/bash
 
 sudo virsh list --all && 
-instance=1 &&
-while [ $instance -le 3 ] 
+instance=4 &&
+while [ $instance -le 5 ] 
 do 
-sudo virt-install --connect qemu:///system --name fedora$instance --memory 2048 \
+sudo virt-install --connect qemu:///system --name fedora$instance --memory 2048 --vcpus 1 \
 --disk pool=vms,size=20,format=qcow2 --os-variant fedora29 \
 --location /var/lib/libvirt/images/fedora32.iso \
+--network network=default \
 --initrd-inject='./Downloads/lab2/fedora-ks.cfg' \
 --extra-args="ks=file:/fedora-ks.cfg" \
---autostart &&
+--autostart &
 sleep 5 
 let instance++ 
 done &&
 sudo virsh list --all
-
-
-
